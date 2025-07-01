@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">SK</h1>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" data-aos="fade-up">
+      <div class="hero-content">
+        <h1>Shubham Kakade</h1>
+        <p>Full Stack Web Developer</p>
+        <a href="#contact" class="btn">Let's Connect</a>
+      </div>
+    </section>
+
+    <section id="about" class="about project-card" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>
+        💻 I'm a passionate <b>Full Stack Web Developer</b> with hands-on
+        experience in building dynamic and responsive web applications using the
+        MERN stack (MongoDB, Express.js, React, Node.js). My foundation is built
+        on strong core skills in <b>JavaScript, HTML, CSS, Node.js, Express.js, MongoDb, and SQL</b> and
+        I bring structure to my code with the MVC architecture. I also have a
+        solid command of <b>Java and Data Structures & Algorithms</b>, allowing
+        me to tackle challenges with both creativity and efficiency. Whether
+        it’s crafting intuitive UIs or engineering scalable backend systems, I
+        love turning ideas into seamless digital experiences.
+      </p>
+    </section>
+
+    <section id="projects" class="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="assets/sportiy.PNG" alt="Project 1 Screenshot" />
+          <h3>Sportify Clone</h3>
+          <p>
+            A personal portfolio showcasing my work and skills. Built using HTML
+            and CSS.
+          </p>
+          <a
+            href="https://github.com/shubhamk151/sportify-clone"
+            target="_blank"
+            class="btn"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="assets/wonderlust.PNG" alt="Project 2 Screenshot" />
+          <h3>Online-Hotel-Booking</h3>
+          <p>
+            Online store with product filtering, shopping cart, and user
+            authentication.
+          </p>
+          <a href="https://your-ecommerce-site.com" target="_blank" class="btn"
+            >Live Demo</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="assets/chat.jpg" alt="Project 3 Screenshot" />
+          <h3>Task Manager</h3>
+          <p>
+            A task tracking app using React and Firebase for real-time sync and
+            auth.
+          </p>
+          <a
+            href="https://github.com/yourusername/task-manager"
+            target="_blank"
+            class="btn"
+            >View Code</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills" data-aos="zoom-in">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <div class="skill">
+          <i class="fa-brands fa-html5"></i>
+          <p>HTML</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-node"></i>
+          <p>Node.js</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-react"></i>
+          <p>React</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-solid fa-database"></i>
+          <p>MongoDB</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-java"></i>
+          <p>Java</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-solid fa-code"></i>
+          <p>C++</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-github"></i>
+          <p> GitHub</p>
+        </div>
+      </ul>
+    </section>
+
+    <footer id="contact" class="footer">
+      <br />
+      <div class="social-icons">
+        <a href="https://github.com/shubhamk151" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/shubham-kakade151" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://twitter.com/@Shubham702050" target="_blank">Twitter</a>
+      </div>
+
+      <br />
+
+      <a href="shubhamkakade151@gmail.com"
+        >Contact: shubhamkakade151@gmail.com</a
+      >
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
