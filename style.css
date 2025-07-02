@@ -1,20 +1,11 @@
 :root {
-  --bg: #ffffff;
   --text: #000000;
   --primary: #0072ff;
 }
 
 body {
   font-family: sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
   transition: all 0.3s ease;
-}
-
-.dark-mode {
-  --bg: #121212;
-  --text: #ffffff;
-  --primary: #00bcd4;
 }
 
 nav {
@@ -71,12 +62,20 @@ nav {
   border-radius: 0px 0px 10px 10px;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-content h1 {
   font-size: 40px;
   margin-left: 1rem;
-  margin-right: -3rem;
   margin-bottom: -0.5rem;
+  white-space: nowrap;
 }
+
 .hero-content p {
   margin-bottom: 1.7rem;
   font-weight: 800;
@@ -85,6 +84,21 @@ nav {
 #about {
   line-height: 25px;
   margin-top: 0.3rem;
+  padding: 1.5rem;
+}
+
+.education-grid {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.education {
+  background-color: #eee;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .btn {
@@ -109,11 +123,11 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background:   #eee;
+  background-color: #eee;
   border-radius: 10px;
   height: 4.5rem;
   width: 4.5rem;
-  padding-top: 1.5rem; 
+  padding-top: 1.5rem;
 }
 
 .skill:hover {
@@ -124,6 +138,7 @@ nav {
 .skill i {
   font-size: 40px;
 }
+
 .skill p {
   font-size: 17px;
   font-weight: 650;
@@ -162,8 +177,9 @@ nav {
   color: var(--primary);
   text-decoration: none;
 }
+
 .footer {
-  background: linear-gradient(to right, var(--primary), hwb(193 9% 0%));
+  background: linear-gradient(to right, hwb(193 9% 0%));
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -188,16 +204,28 @@ nav {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #222;
-    padding: 1rem;
-    position: absolute;
-    top: 60px;
-    right: 1rem;
+    align-items: center;
+    justify-content: left;
     z-index: 10;
+    padding: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 50px;
   }
 
   .nav-links.show {
     display: flex;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
   }
 
   .menu-toggle {
