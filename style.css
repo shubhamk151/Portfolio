@@ -6,6 +6,7 @@
 body {
   font-family: sans-serif;
   transition: all 0.3s ease;
+  background-color: rgb(255, 253, 253);
 }
 
 nav {
@@ -42,7 +43,8 @@ nav {
 }
 
 .nav-links a:hover {
-  opacity: 0.9;
+  color: #0072ff;
+  text-decoration: underline;
 }
 
 .menu-toggle {
@@ -89,14 +91,14 @@ nav {
 
 .education-grid {
   display: flex;
-  gap: 0.6rem;
-  justify-content: center;
+  gap: 1rem;
+ justify-content: center;
   flex-wrap: wrap;
 }
 
 .education {
   background-color: #eee;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
@@ -197,7 +199,8 @@ nav {
 }
 
 .footer a:hover {
-  opacity: 0.9;
+  color: #0072ff;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
