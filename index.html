@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link
@@ -19,7 +19,9 @@
     <header>
       <nav>
         <h1 class="logo">SK</h1>
-        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="menu-toggle" id="menu-toggle" data-aos="fade-left">
+          &#9776;
+        </div>
         <ul class="nav-links" id="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -29,16 +31,19 @@
       </nav>
     </header>
 
-    <section class="hero" data-aos="fade-up">
-      <div class="hero-content">
-        <h1>Shubham Kakade</h1>
-        <p>Full Stack Web Developer</p>
-        <a href="#contact" class="btn">Let's Connect</a>
+    <section class="userTab">
+      <div class="userTab-content">
+        <h1 id="user">Shubham Kakade</h1>
+        <p id="profession">Full Stack Web Developer</p>
+        <a href="#contact" id="btn" class="btn">Let's Connect</a>
+      </div>
+      <div class="userTab-photo">
+        <img src="assets/profile2.png" alt="background-image" id="bgImage" />
       </div>
     </section>
 
-    <section id="about" class="about project-card" data-aos="fade-right">
-      <h2>About Me</h2>
+    <section id="about" class="about project-card" data-aos="fade-up">
+      <h2><u>About Me:</u></h2>
       <p>
         💻 I'm a passionate <b>Full Stack Web Developer</b> with hands-on
         experience in building dynamic and responsive web applications using the
@@ -53,9 +58,9 @@
       </p>
     </section>
 
-    <section data-aos="fade-left">
-      <h2>Education</h2>
-      <div class="education-grid">
+    <section class="educationSection" data-aos="fade-up">
+      <h2>Education:</h2>
+      <div class="educationTab">
         <div class="education">
           <b>
             <p>Dr.Babasaheb Marathwada Univercity Chhatrapati Sambhajinagar</p>
@@ -81,31 +86,39 @@
     </section>
 
     <section id="projects" class="projects" data-aos="fade-up">
-      <h2>Projects</h2>
+      <h2>Projects:</h2>
       <div class="project-grid">
+        <div class="project-card">
+          <img src="assets/wonderlust.PNG" alt="Project 2 Screenshot" />
+          <h3>Online-Hotel-Booking</h3>
+          <p>
+            A full-stack online hotel booking web app inspired by Airbnb,
+            developed using the MERN stack (MongoDB, Express.js, React.js, and
+            Node.js). It includes user authentication, property listings,
+            booking functionality, and a responsive, modern UI for seamless
+            hotel search and reservation.
+          </p>
+          <a
+            href="https://wonderlust-wduj.onrender.com/listings"
+            target="_blank"
+            class="btn"
+            >Live Demo</a
+          >
+        </div>
+
         <div class="project-card">
           <img src="assets/sportiy.PNG" alt="Project 1 Screenshot" />
           <h3>Sportify Clone</h3>
           <p>
-            A personal portfolio showcasing my work and skills. Built using HTML
-            and CSS.
+            A simple Spotify clone built using HTML and CSS, featuring a clean
+            UI with a custom music player layout and album cover display that
+            mimics the core look and feel of the original Spotify web interface.
           </p>
           <a
             href="https://github.com/shubhamk151/sportify-clone"
             target="_blank"
             class="btn"
             >View on GitHub</a
-          >
-        </div>
-        <div class="project-card">
-          <img src="assets/wonderlust.PNG" alt="Project 2 Screenshot" />
-          <h3>Online-Hotel-Booking</h3>
-          <p>
-            Online store with product filtering, shopping cart, and user
-            authentication.
-          </p>
-          <a href="https://your-ecommerce-site.com" target="_blank" class="btn"
-            >Live Demo</a
           >
         </div>
         <div class="project-card">
@@ -125,70 +138,74 @@
       </div>
     </section>
 
-    <section id="skills" class="skills" data-aos="zoom-in">
-      <h2>Skills</h2>
-      <ul class="skills-list">
+    <section id="skills" class="skills">
+      <h2>Skills:</h2>
+      <ul class="skills-list" data-aos="zoom-in">
         <div class="skill">
-          <i class="fa-brands fa-html5"></i>
+          <img src="assets/html.png">
           <p>HTML</p>
         </div>
 
         <div class="skill">
-          <i class="fa-brands fa-css3-alt"></i>
+          <img src="assets/css-3.png">
           <p>CSS</p>
         </div>
 
         <div class="skill">
-          <i class="fa-brands fa-js"></i>
+          <img src="assets/java-script.png">
           <p>JavaScript</p>
         </div>
 
         <div class="skill">
-          <i class="fa-brands fa-node"></i>
+          <img src="assets/nodejs.png">
           <p>Node.js</p>
         </div>
 
         <div class="skill">
-          <i class="fa-brands fa-react"></i>
+          <img src="assets/react.png">
           <p>React</p>
         </div>
 
         <div class="skill">
-          <i class="fa-solid fa-database"></i>
+          <img src="assets/database-storage.png">
           <p>MongoDB</p>
         </div>
 
         <div class="skill">
-          <i class="fa-brands fa-java"></i>
+          <img src="assets/java (1).png">
           <p>Java</p>
         </div>
 
         <div class="skill">
-          <i class="fa-solid fa-code"></i>
-          <p>C++</p>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-github"></i>
+          <img src="assets/github-sign.png">
           <p>GitHub</p>
         </div>
       </ul>
     </section>
 
+    <section id="contactTab">
+      <div><h2>Contact:</h2></div>
+      <div class="contact">
+        <h4>Email:</h4>
+        <p>shubhamkakade151@gmail.com</p>
+      </div>
+      <div class="contact">
+        <h4>Mobile No.:</h4>
+        <p>7020505333</p>
+      </div>
+    </section>
+
     <footer id="contact" class="footer">
       <br />
       <div class="social-icons">
-        <a href="https://github.com/shubhamk151" target="_blank">GitHub</a>
+        <a href="https://github.com/shubhamk151" target="_blank"> GitHub</a>
         <a href="https://linkedin.com/in/shubham-kakade151" target="_blank"
           >LinkedIn</a
         >
         <a href="https://twitter.com/@Shubham702050" target="_blank">Twitter</a>
       </div>
 
-      <br />
-
-      <a href="shubhamkakade151@gmail.com"
-        >Contact: shubhamkakade151@gmail.com</a
-      >
+      <a href="#"><i class="fa-regular fa-copyright"></i> copyright 2025</a>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
