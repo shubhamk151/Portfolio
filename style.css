@@ -1,4 +1,5 @@
 body {
+  margin: 0.4rem;
   font-family: Tahoma, sans-serif;
   background-color: #94acbf;
   color: #000000;
@@ -284,6 +285,7 @@ nav {
 
 .footer a:hover {
   text-decoration: underline;
+  color: #1eff4fec;
 }
 
 @media (max-width: 768px) {
@@ -293,11 +295,10 @@ nav {
     align-items: center;
     justify-content: left;
     margin-left: -1.6rem;
-    z-index: 10;
-    padding: 3rem;
+    margin-top: 4rem;
     width: 100%;
     position: absolute;
-    top: 30px;
+    top: 10px;
   }
 
   .nav-links.show {
@@ -316,7 +317,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin-left: 4rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 10px;
     order: 2;
     margin-bottom: 1.5rem;
@@ -337,6 +338,8 @@ nav {
     width: 270px;
     margin-left: 3rem;
     order: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgb(165, 173, 173);
   }
 
   .contact h4 p {
