@@ -32,6 +32,10 @@ nav {
   gap: 1rem;
 }
 
+.nav-links a{
+  padding-left: 1.6rem;
+}
+
 .nav-links a,
 .nav-links button {
   color: white;
@@ -196,7 +200,7 @@ nav {
 
 .skills-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 2rem;
   flex-wrap: wrap;
   list-style: none;
